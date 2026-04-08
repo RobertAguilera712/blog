@@ -40,6 +40,18 @@ DISPLAY_PAGES_ON_MENU = True
 
 SUMMARY_MAX_PARAGRAPHS = 1
 
+# Enable Pygments for syntax highlighting
+PYGMENTS_RST_OPTIONS = {'class': 'highlight'}
+# Optional: Use CSS classes instead of inline styles
+PYGMENTS_USE_CLASSES = True
+
+LIQUID_TAGS = ["img", "literal", "video", "youtube",
+               "vimeo", "include_code"]
+
+STATIC_PATHS = ['images', 'code']
+CODE_DIR = 'code'
+
+
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 

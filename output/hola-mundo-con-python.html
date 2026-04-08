@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Roberto Aguilera's Blog - Hola mundo con Python</title>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Pelican" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- custom CSS -->
+  <link href="/theme/css/styles.css" rel="stylesheet">
+  <link href="/theme/css/pygments.css" rel="stylesheet">
+  <link href="/theme/css/hamburger.css" rel="stylesheet">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/theme/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/theme/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/theme/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/theme/favicon_io/site.webmanifest">
+
+
+
+
+
+<meta name="tags"
+      content="Python" />
+<meta name="tags"
+      content="Tutorial" />
+<meta name="tags"
+      content="Programación" />
+
+<link href="/theme/css/article.css"
+      rel="stylesheet">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand"
+           href="/">
+            <img src="/theme/images/logo.png"
+                 height="30"
+                 alt="Robert Aguilera's Logo"
+                 class="d-inline-block align-text-center">
+            Roberto Aguilera</a>
+        <button class="navbar-toggler d-flex d-lg-none flex-column justify-content-around collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+             id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="/pages/about.html">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="/pages/projects.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="/pages/contact.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <hgroup>
+<header>
+  <h1 class="text-center mt-4 mb-2">Hola mundo con Python</h2>
+    
+</header>
+    </hgroup>
+
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12 ">
+
+
+        <main>
+<article class="container my-5">
+  <p>Después de haber instalado Python, comenzaremos haciendo el programa más popular cuando se empieza a estudiar programación, "Hola, Mundo!".</p>
+<p>Este es el programa más sencillo que existe, el objetivo es crear un programa, que al ejecutarlo imprima la frase "Hola, Mundo!" en la pantalla.</p>
+<p>Iniciamos creando un archivo llamado <em>hola.py</em> donde escribiremos el siguiente código.</p>
+<figure class='code'>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hola, Mundo!!!!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</figure>
+<p>Así de sencillo es crear este programa en Python, ya que es un lenguaje de programación muy fácil de aprender.
+Lo que estamos haciendo es usar la función <em>print</em>, que como su nombre lo indica, se usa para imprimir cosas en pantalla.</p>
+<p>Para usarla, tenemos que escribir paréntesis y dentro de estos, pasarle lo
+que queremos imprimir, lo que pasamos dentro de los paréntesis se llama <em>parámetro</em>.</p>
+<p>Para ejecutar nuestro programa abrimos la terminal en Visual Studio Code
+(shortcut: <em>Ctrl-`</em> ) e ingresamos el siguiente comando.</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>hola.py
+</code></pre></div>
+
+<p>Una vez ingresado el comando, vemos como en la terminal se imprime el texto <em>Hola, Mundo!</em></p>
+<h2>Entrada de datos</h2>
+<p>Nuestro primer programa no es nada interactivo, pues, solo imprime el mismo
+mensaje en pantalla cada vez que lo ejecutamos. El objetivo principal de un
+programa es solucionar un problema, para esto tiene que recibir datos de
+entrada, procesarlos internamente y generar datos de salida que sean de utilidad
+y faciliten nuestra vida.</p>
+<p>Para recibir datos de entrada por consola en python se usa la función <em>input</em>.
+Para entender como se usa, escribamos un programa que pida al usuario su nombre, y una
+vez que lo haya ingresado lo salude diciendo "Hola, " seguido del nombre que el
+usuario ingresó.</p>
+<p>Para ello creemos un archivo llamado <em>saludo.py</em> e ingresemos el siguiente código</p>
+<figure class='code'>
+
+<div class="highlight"><pre><span></span><code><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Cuál es tu nombre: &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</figure>
+<p>Para correr este programa ingresamos el siguiente comando en la terminal.</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>saludo.py
+</code></pre></div>
+
+<p>Al ingresar el comando se ejecutará nuestro programa.</p>
+<p>La función <em>input</em> recibe como parámetro el texto con el que pediremos al usuario que ingrese algún dato, en este caso el nombre. Como resultado nos da lo que el usuario haya ingresado antes de presionar <em>enter</em>, este resultado lo guardamos en una variable llamada nombre.</p>
+<p>En la línea 2 usamos la función de <em>print</em>, del primer programa, para imprimir el
+saludo en pantalla, aunque ahora el parámetro ha cambiado. Al principio
+de nuestro mensaje, afuera de las comillas, hemos escrito una <em>f</em>. Al poner esta <em>f</em>
+al principio hacemos uso de una de las características de Python llamada
+<em>"F-Strings"</em></p>
+<p>Pero, que es un <em>"F-String"</em>, para entender este término primero necesitamos
+entender que es un <em>string</em>. Un string en Python es un tipo de dato que
+representa una cadena de texto, la cual siempre va dentro de comillas sencillas
+'cadena' o comillas dobles "cadena".</p>
+<p>Entonces, un <em>"F-String"</em>, es un <em>string</em>, cadena de texto, que nos permite
+incrustar el valor de una variable, poniéndolo entre corchetes {}, es por esto que nuestro programa imprime "Hola, " seguido del nombre que el usuario ingresó y no "Hola, nombre"</p>
+<h2>Ejercicio: Cafetería</h2>
+<p>Para reforzar los conceptos aprendidos el día de hoy. Escribe un programa que
+simule el pedido en una cafetería. Tu programa debe darle la bienvenida al
+usuario con el mensaje "Bienvenido a la cafetería Robert's" luego, debe
+de preguntarle "¿Qué va a ordenar?", después, debe de preguntar "¿A nombre
+de quién?". Por último debe de imprimir, la orden y a quien va dirigida, por
+ejemplo. Si el usuario Roberto pidió un café americano el programa debe de
+imprimir "Sale café americano para Roberto".</p>
+<h2>Solución al ejercicio</h2>
+<p><img alt="Imagen de código" src="/images/solution.jpg"></p>
+<p>Antes de ver la solución, trata de resolver el problema por ti mismo, haz uso de las funciones <em>print</em> e <em>input</em> y si tienes alguna duda vuelve a repasar los ejemplos y la explicación.</p>
+<p>Para crear nuestro programa crea un archivo llamado <em>cafeteria.py</em> e ingresa el siguiente código.</p>
+<figure class='code'>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bienvenido a la cafetería Robert&#39;s&quot;</span><span class="p">)</span>
+<span class="n">orden</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Qué va a ordenar? &quot;</span><span class="p">)</span>
+<span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿A nombre de quién? &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sale </span><span class="si">{</span><span class="n">orden</span><span class="si">}</span><span class="s2"> para </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</figure>
+<p>Para solucionar el ejercicio primero imprimimos el mensaje de bienvenida usando
+la función <em>print</em>, enseguida pedimos al usuario su orden y su nombre usando la
+función <em>input</em> y guardamos los resultados en las variables orden y nombre,
+respectivamente. Por último, imprimimos el mensaje indicando que la orden está
+lista volviendo a hacer uso de la función <em>print</em></p>
+<h2>Resumen</h2>
+<p>En este post aprendiste a imprimir texto en pantalla, usando la función <em>print</em>,
+y a recibir datos del usuario, usando la función <em>input</em>. En el siguiente tutorial veremos cómo trabajar con números y realizar operaciones básicas en Python.</p>
+  <!-- <footer>
+    <p>Published: <time datetime="2026-04-01T00:00:00-06:00">
+        Wed 01 April 2026
+      </time></p>
+    <address>
+      By       <a href="/author/roberto-aguilera.html">Roberto Aguilera</a>
+    </address>
+    <p>
+      Category: <a href="/category/python.html">Python</a>
+    </p>
+    <p>
+      Tags:
+      <a href="/tag/python.html">Python</a>
+      <a href="/tag/tutorial.html">Tutorial</a>
+      <a href="/tag/programacion.html">Programación</a>
+    </p>
+  </footer> -->
+</article>
+        </main>
+
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12">
+
+<aside class="card bg-dark mx-auto mb-4" data-bs-theme="dark">
+    <div class="card-header">Acerca de mí</div>
+    <div class="card-body ">
+        <img src="/theme/images/avatar.png" alt="" style="float: left;" height="80px" class="me-2">
+        Hola, me llamo Roberto, soy un ingeniero de software que ama compartir conocimiento y su punto de vista con
+        el mundo.
+
+        <br>
+        <br>
+        Puedes encontrarme en:
+        <br>
+
+        <a href="https://github.com/RobertAguilera712" target="_blank" class="me-2">
+            <i class="bi bi-github"></i> GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/roberto-carlos-aguilera-alcantar-37b9021b9/" target="_blank" class="me-2">
+            <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+
+        <a href="https://github.com/RobertAguilera712" target="_blank" class="me-2">
+            <i class="bi bi-instagram"></i> Instagram
+        </a>
+
+        <a href="https://github.com/RobertAguilera712" target="_blank" class="me-2">
+            <i class="bi bi-tiktok"></i> TikTok
+        </a>
+
+        <br>
+        <br>
+        Disfruta tu visita.
+
+    </div>
+</aside>
+
+<aside class="card bg-dark mx-auto mb-4" data-bs-theme="dark">
+    <div class="card-header">Categorías</div>
+    <div class="card-body">
+
+        <a href="/category/python.html"  class="btn btn-danger btn-sm me-2 mb-2">
+            Python
+        </a>
+
+
+        <a href="/category/tutorial.html"  class="btn btn-danger btn-sm me-2 mb-2">
+            Tutorial
+        </a>
+
+
+    </div>
+</aside>      </div>
+
+    </div>
+  </div>
+
+<footer class="bg-dark text-center text-light py-3 mt-auto footer">
+    &copy; Roberto Aguilera
+</footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
