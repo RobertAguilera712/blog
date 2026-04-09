@@ -103,21 +103,16 @@
   <p>Después de haber instalado Python, comenzaremos haciendo el programa más popular cuando se empieza a estudiar programación, "Hola, Mundo!".</p>
 <p>Este es el programa más sencillo que existe, el objetivo es crear un programa, que al ejecutarlo imprima la frase "Hola, Mundo!" en la pantalla.</p>
 <p>Iniciamos creando un archivo llamado <em>hola.py</em> donde escribiremos el siguiente código.</p>
-<figure class='code'>
-
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hola, Mundo!!!!&quot;</span><span class="p">)</span>
 </code></pre></div>
-
-</figure>
 <p>Así de sencillo es crear este programa en Python, ya que es un lenguaje de programación muy fácil de aprender.
 Lo que estamos haciendo es usar la función <em>print</em>, que como su nombre lo indica, se usa para imprimir cosas en pantalla.</p>
 <p>Para usarla, tenemos que escribir paréntesis y dentro de estos, pasarle lo
 que queremos imprimir, lo que pasamos dentro de los paréntesis se llama <em>parámetro</em>.</p>
 <p>Para ejecutar nuestro programa abrimos la terminal en Visual Studio Code
-(shortcut: <em>Ctrl-`</em> ) e ingresamos el siguiente comando.</p>
+(shortcut:  <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>`</kbd></span>) e ingresamos el siguiente comando.</p>
 <div class="highlight"><pre><span></span><code>python<span class="w"> </span>hola.py
 </code></pre></div>
-
 <p>Una vez ingresado el comando, vemos como en la terminal se imprime el texto <em>Hola, Mundo!</em></p>
 <h2>Entrada de datos</h2>
 <p>Nuestro primer programa no es nada interactivo, pues, solo imprime el mismo
@@ -132,15 +127,15 @@ usuario ingresó.</p>
 <p>Para ello creemos un archivo llamado <em>saludo.py</em> e ingresemos el siguiente código</p>
 <figure class='code'>
 
-<div class="highlight"><pre><span></span><code><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Cuál es tu nombre: &quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div>
-
+<pre><code>:::python
+nombre = input("Cuál es tu nombre: ")
+print(f"Hola, {nombre}")
+</code></pre>
 </figure>
 <p>Para correr este programa ingresamos el siguiente comando en la terminal.</p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>saludo.py
-</code></pre></div>
-
+<pre><code>:::bash
+python saludo.py
+</code></pre>
 <p>Al ingresar el comando se ejecutará nuestro programa.</p>
 <p>La función <em>input</em> recibe como parámetro el texto con el que pediremos al usuario que ingrese algún dato, en este caso el nombre. Como resultado nos da lo que el usuario haya ingresado antes de presionar <em>enter</em>, este resultado lo guardamos en una variable llamada nombre.</p>
 <p>En la línea 2 usamos la función de <em>print</em>, del primer programa, para imprimir el
@@ -163,17 +158,17 @@ de quién?". Por último debe de imprimir, la orden y a quien va dirigida, por
 ejemplo. Si el usuario Roberto pidió un café americano el programa debe de
 imprimir "Sale café americano para Roberto".</p>
 <h2>Solución al ejercicio</h2>
-<p><img alt="Imagen de código" src="/images/solution.jpg"></p>
+<p><img alt="Imagen de código" src="/images/solution.jpg" /></p>
 <p>Antes de ver la solución, trata de resolver el problema por ti mismo, haz uso de las funciones <em>print</em> e <em>input</em> y si tienes alguna duda vuelve a repasar los ejemplos y la explicación.</p>
 <p>Para crear nuestro programa crea un archivo llamado <em>cafeteria.py</em> e ingresa el siguiente código.</p>
 <figure class='code'>
 
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bienvenido a la cafetería Robert&#39;s&quot;</span><span class="p">)</span>
-<span class="n">orden</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Qué va a ordenar? &quot;</span><span class="p">)</span>
-<span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿A nombre de quién? &quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sale </span><span class="si">{</span><span class="n">orden</span><span class="si">}</span><span class="s2"> para </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div>
-
+<pre><code>:::python
+print("Bienvenido a la cafetería Robert's")
+orden = input("¿Qué va a ordenar? ")
+nombre = input("¿A nombre de quién? ")
+print(f"Sale {orden} para {nombre}")
+</code></pre>
 </figure>
 <p>Para solucionar el ejercicio primero imprimimos el mensaje de bienvenida usando
 la función <em>print</em>, enseguida pedimos al usuario su orden y su nombre usando la

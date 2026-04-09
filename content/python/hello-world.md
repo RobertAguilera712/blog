@@ -10,7 +10,9 @@ Este es el programa más sencillo que existe, el objetivo es crear un programa, 
 
 Iniciamos creando un archivo llamado *hola.py* donde escribiremos el siguiente código.
 
-{% include_code python/hola.py lang:python :hideall:  %}
+```python
+--8<-- "content/code/python/hola.py"
+```
 
 Así de sencillo es crear este programa en Python, ya que es un lenguaje de programación muy fácil de aprender.
 Lo que estamos haciendo es usar la función *print*, que como su nombre lo indica, se usa para imprimir cosas en pantalla.
@@ -19,10 +21,11 @@ Para usarla, tenemos que escribir paréntesis y dentro de estos, pasarle lo
 que queremos imprimir, lo que pasamos dentro de los paréntesis se llama *parámetro*.
 
 Para ejecutar nuestro programa abrimos la terminal en Visual Studio Code
-(shortcut: *Ctrl-`* ) e ingresamos el siguiente comando.
+(shortcut:  ++ctrl+"`"++) e ingresamos el siguiente comando.
 
-    :::bash
-    python hola.py
+```bash
+python hola.py
+```
 
 Una vez ingresado el comando, vemos como en la terminal se imprime el texto *Hola, Mundo!*
 

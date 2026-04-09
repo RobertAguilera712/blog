@@ -4,3 +4,7 @@ p>img {
     display: block;
     margin: auto;
 }
+
+kbd{
+    background-color: #3e3e3e;
+}

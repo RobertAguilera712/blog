@@ -1,3 +1,20 @@
+from pymdownx import emoji
+
+MARKDOWN = {
+    "extensions": [
+        "pymdownx.mark",
+        "pymdownx.smartsymbols",
+        "pymdownx.tilde",
+        "pymdownx.saneheaders",
+        "pymdownx.keys",
+        "pymdownx.inlinehilite",
+        "pymdownx.emoji",
+        "pymdownx.snippets",
+        "pymdownx.extra",
+    ],
+    "extension_configs": {"pymdownx.emoji": {"emoji_generator": emoji.to_png_sprite}},
+}
+
 AUTHOR = 'Roberto Aguilera'
 SITENAME = "Roberto Aguilera's Blog"
 SITEURL = ""
