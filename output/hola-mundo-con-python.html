@@ -2,10 +2,18 @@
 <html lang="es">
 
 <head>
-  <title>Roberto Aguilera's Blog - Hola mundo con Python</title>
+  <title>Roberto Aguilera Dev - Hola mundo con Python</title>
   <meta charset="utf-8" />
   <meta name="generator" content="Pelican" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Roberto Aguilera Dev, Roberto Aguilera Desarrollador, Desarrollador de software León GTO, Desarrollador León GTO">
+
+  <meta property="og:site_name" content="Roberto Aguilera Dev">
+  <meta name="description" content="Desarrollador de software en León GTO. Páginas web y aplicaciones móviles">
+  <meta property="og:description" content="Desarrollador de software en León GTO. Páginas web y aplicaciones móviles">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="/theme/images/avatar.png">
+
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -26,6 +34,10 @@
 
 
 
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hola mundo con Python">
+<meta property="og:url" content="/hola-mundo-con-python.html">
 
 <meta name="tags" content="Python" />
 <meta name="tags" content="Tutorial" />
@@ -96,32 +108,32 @@
 
         <main>
 <article class="container my-5">
-  <p>Después de haber instalado Python, comenzaremos haciendo el programa más popular cuando se empieza a estudiar programación, "Hola, Mundo!".</p>
-<p>Este es el programa más sencillo que existe, el objetivo es crear un programa que al ejecutarlo imprima la frase "Hola, Mundo!" en la pantalla.</p>
+  <p>Después de haber instalado Python, comenzaremos con el programa más popular cuando se empieza a estudiar programación, "Hola, Mundo!".</p>
+<p>Este es el programa más sencillo que existe el objetivo es crear un programa que al ejecutarlo imprima la frase "Hola, Mundo!" en la pantalla.</p>
 <p>Iniciamos creando un archivo llamado <code class="highlight">hola.py</code> donde escribiremos el siguiente código.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hola, Mundo!!!!&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p>Así de sencillo es crear este programa en Python, ya que es un lenguaje de programación muy fácil de aprender.
-Lo que estamos haciendo es usar la función <code class="highlight"><span class="nb">print</span></code>, que como su nombre lo indica, se usa para imprimir cosas en pantalla.</p>
+Lo que estamos haciendo es usar la función <code class="highlight"><span class="nb">print</span></code>, que como su nombre lo indica, se usa para imprimir texto en pantalla.</p>
 <p>Para usarla, tenemos que escribir paréntesis y dentro de estos, pasarle lo
-que queremos imprimir, lo que pasamos dentro de los paréntesis se llama <strong><em>parámetro</em></strong>.</p>
+que queremos imprimir, el valor que se pone dentro de los paréntesis se llama <strong><em>parámetro</em></strong>.</p>
 <p>Para ejecutar nuestro programa abrimos la terminal en Visual Studio Code
 (shortcut:  <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>`</kbd></span>) e ingresamos el siguiente comando.</p>
 <div class="highlight"><pre><span></span><code>python<span class="w"> </span>hola.py
 </code></pre></div>
-<p>Una vez ingresado el comando, vemos como en la terminal se imprime el texto <strong><em>Hola, Mundo!</em></strong></p>
-<p><img alt="Imagen de código" src="/images/hola.png" /></p>
+<p>Una vez ingresado el comando, vemos cómo en la terminal se imprime el texto <strong><em>Hola, Mundo!</em></strong></p>
+<p><img alt="Terminal ejecutando el script hola.py" src="/images/hola.png" /></p>
 <h2>Entrada de datos</h2>
 <p>Nuestro primer programa no es nada interactivo, pues solo imprime el mismo
 mensaje en pantalla cada vez que lo ejecutamos. El objetivo principal de un
 programa es solucionar un problema, para eso tiene que recibir datos de
 entrada, procesarlos internamente y generar datos de salida que sean de utilidad
 y faciliten nuestra vida.</p>
-<p>Para recibir datos de entrada por consola en python se usa la función <code class="highlight"><span class="nb">input</span></code>.
-Para entender cómo se usa, escribamos un programa que pida al usuario su nombre, y una
+<p>Para recibir datos de entrada por consola en Python se usa la función <code class="highlight"><span class="nb">input</span></code>.
+Para entender cómo se usa, escribamos un programa que pida al usuario su nombre y una
 vez que lo haya ingresado lo salude diciendo "Hola, " seguido del nombre que el
 usuario ingresó.</p>
-<p>Para ello creemos un archivo llamado <code class="highlight">saludo.py</code> e ingresemos el siguiente código.</p>
+<p>Para ello creamos un archivo llamado <code class="highlight">saludo.py</code> e ingresemos el siguiente código.</p>
 <div class="highlight"><pre><span></span><code><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu nombre?: &quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
@@ -133,29 +145,29 @@ usuario ingresó.</p>
 usuario que ingrese algún dato, en este caso el nombre. Como resultado nos da lo
 que el usuario haya ingresado antes de presionar <span class="keys"><kbd>enter</kbd></span>, este resultado lo
 guardamos en una variable llamada nombre.</p>
-<p>En la línea 2 usamos la función de <code class="highlight"><span class="nb">print</span></code>, del primer programa, para imprimir el
+<p>En la línea 2 usamos la función de <code class="highlight"><span class="nb">print</span></code> del primer programa para imprimir el
 saludo en pantalla, aunque ahora el parámetro ha cambiado. Al principio
 de nuestro mensaje, afuera de las comillas hemos escrito una <strong><em>f</em></strong>. Al poner esta <strong><em>f</em></strong>
 al principio hacemos uso de una de las características de Python llamada
 <strong><em>"F-Strings"</em></strong></p>
-<p>Pero, ¿que es un <strong><em>"F-String"</em></strong>?, para entender este término primero necesitamos
-entender que es un <strong><em>string</em></strong>. Un string en Python es un tipo de dato que
+<p>Pero ¿que es un <strong><em>"F-String"</em></strong>?, para entender este término primero necesitamos
+entender qué es un <strong><em>string</em></strong>. Un string en Python es un tipo de dato que
 representa una cadena de texto, la cual siempre va dentro de comillas sencillas
 'cadena' o comillas dobles "cadena".</p>
-<p>Entonces, un <strong><em>"F-String"</em></strong>, es un <strong><em>string</em></strong>, cadena de texto, que nos permite
+<p>Entonces, un <strong><em>"F-String"</em></strong> es un <strong><em>string</em></strong>, cadena de texto, que nos permite
 incrustar el valor de una variable, poniéndolo entre corchetes {}, es por esto que nuestro programa imprime "Hola, " seguido del nombre que el usuario ingresó y no "Hola, nombre"</p>
 <h2>Ejercicio: Cafetería</h2>
-<p>Para reforzar los conceptos aprendidos el día de hoy. Escribe un programa que
+<p>Para reforzar los conceptos aprendidos el día de hoy: Escribe un programa que
 simule el pedido en una cafetería. Tu programa debe darle la bienvenida al
-usuario con el mensaje "Bienvenido a la cafetería Robert's" luego, debe
-de preguntarle "¿Qué va a ordenar?", después, debe de preguntar "¿A nombre
-de quién?". Por último debe de imprimir la orden y a quién va dirigida, por
-ejemplo. Si el usuario Roberto pidió un café americano el programa debe de
+usuario con el mensaje "Bienvenido a la cafetería Robert's". Luego, debe
+de preguntarle "¿Qué va a ordenar?", después, debe preguntar "¿A nombre
+de quién?". Por último debe imprimir la orden y a quién va dirigida, por
+ejemplo: Si el usuario Roberto pidió un café americano el programa debe 
 imprimir "Sale café americano para Roberto".</p>
 <h2>Solución al ejercicio</h2>
 <p><img alt="Imagen de código" src="/images/solution.jpg" /></p>
-<p>Antes de ver la solución, trata de resolver el problema por ti mismo, haz uso de las funciones <code class="highlight"><span class="nb">print</span></code> e <code class="highlight"><span class="nb">input</span></code> y si tienes alguna duda vuelve a repasar los ejemplos y la explicación.</p>
-<p>Para crear nuestro programa crea un archivo llamado <code class="highlight">cafeteria.py</code> e ingresa el siguiente código.</p>
+<p>Antes de ver la solución, trata de resolver el problema por ti mismo. Haz uso de las funciones <code class="highlight"><span class="nb">print</span></code> e <code class="highlight"><span class="nb">input</span></code> y si tienes alguna duda vuelve a repasar los ejemplos y la explicación.</p>
+<p>Para crear nuestro programa, crea un archivo llamado <code class="highlight">cafeteria.py</code> e ingresa el siguiente código.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bienvenido a la cafetería Robert&#39;s&quot;</span><span class="p">)</span>
 <span class="n">orden</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Qué va a ordenar? &quot;</span><span class="p">)</span>
 <span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿A nombre de quién? &quot;</span><span class="p">)</span>
@@ -163,15 +175,15 @@ imprimir "Sale café americano para Roberto".</p>
 </code></pre></div>
 <p>Para solucionar el ejercicio primero imprimimos el mensaje de bienvenida usando
 la función <code class="highlight"><span class="nb">print</span></code>, enseguida pedimos al usuario su orden y su nombre usando la
-función <code class="highlight"><span class="nb">input</span></code> y guardamos los resultados en las variables orden y nombre,
+función <code class="highlight"><span class="nb">input</span></code> y guardamos los resultados en las variables <code class="highlight"><span class="n">orden</span></code> y <code class="highlight"><span class="n">nombre</span></code>,
 respectivamente. Por último, imprimimos el mensaje indicando que la orden está
-lista volviendo a hacer uso de la función <code class="highlight"><span class="nb">print</span></code></p>
+lista volviendo a hacer uso de la función <code class="highlight"><span class="nb">print</span></code>.</p>
 <h2>Resumen</h2>
 <p>En este post aprendiste a imprimir texto en pantalla, usando la función <code class="highlight"><span class="nb">print</span></code>
 y a recibir datos del usuario, usando la función <code class="highlight"><span class="nb">input</span></code>. En el siguiente tutorial veremos cómo trabajar con números y realizar operaciones básicas en Python.</p>
   <!-- <footer>
     <p>Published: <time datetime="2026-04-01T00:00:00-06:00">
-        Wed 01 April 2026
+        mié. 01 abril 2026
       </time></p>
     <address>
       By       <a href="/author/roberto-aguilera.html">Roberto Aguilera</a>

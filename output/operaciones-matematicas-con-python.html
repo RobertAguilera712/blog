@@ -2,10 +2,18 @@
 <html lang="es">
 
 <head>
-  <title>Roberto Aguilera's Blog - Operaciones matematicas con Python</title>
+  <title>Roberto Aguilera Dev - Operaciones matemáticas con Python</title>
   <meta charset="utf-8" />
   <meta name="generator" content="Pelican" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Roberto Aguilera Dev, Roberto Aguilera Desarrollador, Desarrollador de software León GTO, Desarrollador León GTO">
+
+  <meta property="og:site_name" content="Roberto Aguilera Dev">
+  <meta name="description" content="Desarrollador de software en León GTO. Páginas web y aplicaciones móviles">
+  <meta property="og:description" content="Desarrollador de software en León GTO. Páginas web y aplicaciones móviles">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="/theme/images/avatar.png">
+
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -27,15 +35,15 @@
 
 
 
-<meta name="tags"
-      content="Python" />
-<meta name="tags"
-      content="Tutorial" />
-<meta name="tags"
-      content="Programación" />
+<meta property="og:type" content="article">
+<meta property="og:title" content="Operaciones matemáticas con Python">
+<meta property="og:url" content="/operaciones-matematicas-con-python.html">
 
-<link href="/theme/css/article.css"
-      rel="stylesheet">
+<meta name="tags" content="Python" />
+<meta name="tags" content="Tutorial" />
+<meta name="tags" content="Programación" />
+
+<link href="/theme/css/article.css" rel="stylesheet">
 
 </head>
 
@@ -87,7 +95,7 @@
 </nav>
     <hgroup>
 <header>
-  <h1 class="text-center mt-4 mb-2">Operaciones matematicas con Python</h2>
+  <h1 class="text-center mt-4 mb-2">Operaciones matemáticas con Python</h2>
     
 </header>
     </hgroup>
@@ -100,7 +108,147 @@
 
         <main>
 <article class="container my-5">
-  <p>en Python y entender cómo funciona la entrada y salida de datos.</p>
+  <p>En el post pasado vimos cómo imprimir y recibir datos con Python, sin embargo,
+nuestros programas no eran de mucha utilidad, pues, aunque tuvieran algo de
+interactividad con el usuario, estos no resolvían ningún problema. Si viajamos
+al pasado, cuando las primeras computadoras se crearon, su principal función en
+aquel tiempo era resolver problemas matemáticos. En este post aprenderemos a cómo 
+realizar operaciones matemáticas en Python.</p>
+<p>Python, como todo lenguaje de programación, cuenta con una serie de <em>operadores
+matemáticos</em> que nos ayudan a realizar operaciones aritméticas. Para conocerlos
+escribamos un programa que sume dos números.</p>
+<p>Comencemos creando un nuevo archivo llamado <em>sumar.py</em> e ingresemos el siguiente código.</p>
+<div class="highlight"><pre><span></span><code><span class="n">valor1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el valor 1: &quot;</span><span class="p">))</span>
+<span class="n">valor2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el valor 2: &quot;</span><span class="p">))</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="n">valor1</span> <span class="o">+</span> <span class="n">valor2</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El resultado es: </span><span class="si">{</span><span class="n">resultado</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Comenzamos pidiendo al usuario que ingrese dos valores, los cuales son guardados
+en las variables <code class="highlight"><span class="n">valor1</span></code> y <code class="highlight"><span class="n">valor2</span></code>, pero esta vez
+utilizamos la función <code class="highlight"><span class="nb">input</span></code> dentro de la función <code class="highlight"><span class="nb">int</span></code>.
+Esta función convierte una cadena de texto en un entero, un
+entero es un número sin decimales.</p>
+<p>Posteriormente, creamos otra variable llamada <code class="highlight"><span class="n">resultado</span></code> y le asignamos como valor la suma de los dos valores ingresados por el usuario, para esto usamos el operador <code class="highlight"><span class="o">+</span></code> que se utiliza para realizar sumas. Por último, imprimimos el resultado usando la función <code class="highlight"><span class="nb">print</span></code>.</p>
+<h2>Datos numéricos vs cadenas de texto</h2>
+<p>En el programa anterior usamos una nueva función, la función <code class="highlight"><span class="nb">int</span></code>, el
+propósito de esta función es convertir una cadena de texto, <code class="highlight"><span class="nb">str</span></code>, en
+un número entero, ya que si no hacemos esto nuestro ejemplo de sumar valores no
+serviría. Para ver que pasaría si no usáramos la función <code class="highlight"><span class="nb">int</span></code>,
+modifica el código en <code class="highlight">sumar.py</code>, y borra la función <code class="highlight"><span class="nb">int</span></code>. El 
+código quedaría de la siguiente manera.</p>
+<div class="highlight"><pre><span></span><code><span class="n">valor1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el valor 1: &quot;</span><span class="p">)</span>
+<span class="n">valor2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el valor 2: &quot;</span><span class="p">)</span>
+<span class="n">resultado</span> <span class="o">=</span> <span class="n">valor1</span> <span class="o">+</span> <span class="n">valor2</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El resultado es: </span><span class="si">{</span><span class="n">resultado</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Al ejecutar el programa usando el comando <code class="highlight">python<span class="w"> </span>calculadora.py</code>, el
+resultado obtenido no es el esperado, pues en vez de sumar los números ingresados,
+los junta, esto se debe a que la función <code class="highlight"><span class="nb">input</span></code> retorna cadenas de
+texto de tipo <code class="highlight"><span class="nb">str</span></code>, debido a esto el operador <code class="highlight"><span class="o">+</span></code> concatena,
+el valor de las variables.</p>
+<p>Para solucionar, convertimos nuestros datos de entrada en enteros usando la función <code class="highlight"><span class="nb">int</span></code>. Si quisiéramos usar números decimales tendríamos que usar la función <code class="highlight"><span class="nb">float</span></code>.</p>
+<h2>Lista de operadores aritméticos en Python</h2>
+<p>Como se mencionó antes, Python cuenta con una serie de operadores aritméticos. La siguiente tabla los lista, mencionando su uso y proporciona un ejemplo de uso.</p>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Uso</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Sumar</td>
+<td>7+2</td>
+<td>9</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Restar</td>
+<td>7-2</td>
+<td>5</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplicar</td>
+<td>7*2</td>
+<td>14</td>
+</tr>
+<tr>
+<td>/</td>
+<td>División</td>
+<td>7/2</td>
+<td>3.5</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Residuo</td>
+<td>7%2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>**</td>
+<td>Potencia</td>
+<td>7**2</td>
+<td>49</td>
+</tr>
+<tr>
+<td>//</td>
+<td>División enteros</td>
+<td>7//2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>Ahora que conocemos los operadores aritméticos, mejoremos nuestro programa, convirtiéndolo en una 
+calculadora. Para ello agregaremos las operaciones de resta, multiplicación y división. 
+En un archivo llamado <code class="highlight">calculadora.py</code> ingresa el siguiente código.</p>
+<div class="highlight"><pre><span></span><code><span class="n">valor1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el valor 1: &quot;</span><span class="p">))</span>
+<span class="n">valor2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el valor 2: &quot;</span><span class="p">))</span>
+<span class="n">suma</span> <span class="o">=</span> <span class="n">valor1</span> <span class="o">+</span> <span class="n">valor2</span>
+<span class="n">resta</span> <span class="o">=</span> <span class="n">valor1</span> <span class="o">-</span> <span class="n">valor2</span>
+<span class="n">multiplicacion</span> <span class="o">=</span> <span class="n">valor1</span> <span class="o">*</span> <span class="n">valor2</span>
+<span class="n">division</span> <span class="o">=</span> <span class="n">valor1</span> <span class="o">/</span> <span class="n">valor2</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La suma es: </span><span class="si">{</span><span class="n">suma</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La resta es: </span><span class="si">{</span><span class="n">resta</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La multiplicación es: </span><span class="si">{</span><span class="n">multiplicacion</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La división es: </span><span class="si">{</span><span class="n">division</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Este programa comienza de igual forma pidiendo al usuario que ingrese dos valores usando las funciones de 
+<code class="highlight"><span class="nb">input</span></code> e <code class="highlight"><span class="nb">int</span></code>, posteriormente realizamos las operaciones y guardamos los
+resultados en variables con los nombres de las operaciones: <code class="highlight"><span class="n">suma</span></code>, <code class="highlight"><span class="n">resta</span></code>, 
+<code class="highlight"><span class="n">multiplicacion</span></code> y <code class="highlight"><span class="n">division</span></code>. El programa finaliza imprimiendo los resultados 
+usando la función <code class="highlight"><span class="nb">print</span></code>.</p>
+<h2>Ejercicio: Conversor de temperaturas</h2>
+<p>Para poner a aprueba el conocimiento de los operadores aritméticos realicemos el siguiente ejercicio.</p>
+<p>Escribe un programa en Python que pida al usuario ingresar una temperatura en grados Celsius y retorne la conversión en grados Fahrenheit.</p>
+<p>La fórmula para convertir grados Celsius a grados Fahrenheit es la siguiente:</p>
+<div class="arithmatex">\[ F = \frac{9}{5}C + 32 \]</div>
+<h2>Solución al ejercicio</h2>
+<p><img alt="Imagen de código" src="/images/solution.jpg" /></p>
+<p>Antes de ver la solución, trata de resolver el problema por ti mismo, vuelve a
+leer el contenido sobre cómo usar los operadores aritméticos en Python, recuerda
+hacer uso de las funciones de salida y entrada de datos: <code class="highlight"><span class="nb">print</span></code>,
+<code class="highlight"><span class="nb">input</span></code>.</p>
+<p>Para darle solución al problema, creamos un archivo llamado <code class="highlight">temperatura.py</code> 
+e ingresamos el siguiente código.</p>
+<div class="highlight"><pre><span></span><code><span class="n">celcius</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Temperatura en grados Celcius: &quot;</span><span class="p">))</span>
+<span class="n">farenheit</span> <span class="o">=</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span> <span class="o">*</span> <span class="n">celcius</span> <span class="o">+</span> <span class="mi">32</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La temeratura en grados Farenheit es de: </span><span class="si">{</span><span class="n">farenheit</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Lo primero que hacemos en el programa es pedir al usuario que ingrese la
+temperatura haciendo uso de la función <code class="highlight"><span class="nb">input</span></code>, el resultado de esta
+función lo convertimos en número decimal usando la función <code class="highlight"><span class="nb">float</span></code>
+enseguida aplicamos la fórmula, haciendo el uso de los operadores aritméticos y
+por último imprimimos los resultados usando la función <code class="highlight"><span class="nb">print</span></code>.</p>
+<h2>Resumen</h2>
+<p>En este tutorial aprendimos a hacer uso de los operadores aritméticos y a
+convertir cadenas de texto, <code class="highlight"><span class="nb">str</span></code> a números enteros usando la función <code class="highlight"><span class="nb">int</span></code> 
+y a números decimales usando la función <code class="highlight"><span class="nb">float</span></code>. En el siguiente
+artículo aprenderemos a usar condicionales.</p>
   <!-- <footer>
     <p>Published: <time datetime="2026-04-09T00:00:00-06:00">
         jue. 09 abril 2026
@@ -119,6 +267,16 @@
     </p>
   </footer> -->
 </article>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+<script src="/theme/js/article.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+
+
         </main>
 
       </div>
@@ -185,6 +343,10 @@
 </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+
+<script src="/theme/js/article.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
 
 </body>
 
