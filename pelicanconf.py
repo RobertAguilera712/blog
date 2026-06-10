@@ -26,7 +26,7 @@ MARKDOWN = {
 
 AUTHOR = "Roberto Aguilera"
 SITENAME = "Roberto Aguilera's Blog"
-SITEURL = ""
+SITEURL = 'https://www.robertoaguilera.dev'
 THEME = "./themes/robert_theme"
 
 PATH = "content"
