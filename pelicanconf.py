@@ -43,7 +43,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-AUTHOR_ABOUT = "Soy un ingeniero en desarrollo de software al que le apasiona compartir conocimiento y crear soluciones digitales. Cuento con amplia experiencia en el desarrollo de aplicaciones móviles, páginas web, aplicaciones de escritorio y todo tipo de soluciones de software que se adapten e impulsen tu negocio."
+AUTHOR_ABOUT = "Soy un ingeniero de software apasionado por compartir conocimiento y crear soluciones digitales. Cuento con amplia experiencia en el desarrollo de aplicaciones móviles, web y de escritorio, diseñando todo tipo de software que impulse y se adapte a tu negocio."
 
 
 # Blogroll
