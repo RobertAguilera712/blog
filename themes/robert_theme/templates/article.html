@@ -12,17 +12,14 @@
 {% endif %}
 
 {% if article.description %}
-<meta name="description"
-      content="{{article.description}}" />
+<meta name="description" content="{{article.description}}" />
 {% endif %}
 
 {% for tag in article.tags %}
-<meta name="tags"
-      content="{{tag}}" />
+<meta name="tags" content="{{tag}}" />
 {% endfor %}
 
-<link href="{{ SITEURL }}/theme/css/article.css"
-      rel="stylesheet">
+<link href="{{ SITEURL }}/theme/css/article.css" rel="stylesheet">
 
 {% endblock %}
 
@@ -68,6 +65,15 @@
     {% endif %}
   </footer> -->
 </article>
+
+{% block scripts %}
+{{ super() }}
+<script src="{{ SITEURL }}/theme/js/article.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+{% endblock scripts %}
+
+
 {% endblock %}
 
 {% block sidebar %}

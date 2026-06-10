@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-  <title>Roberto Aguilera's Blog - Python category</title>
+  <title>Roberto Aguilera's Blog - Condicionales en Python</title>
   <meta charset="utf-8" />
   <meta name="generator" content="Pelican" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +22,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/theme/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/theme/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/theme/favicon_io/site.webmanifest">
+
+
+
+
+
+<meta name="tags" content="Python" />
+<meta name="tags" content="Tutorial" />
+<meta name="tags" content="Programación" />
+
+<link href="/theme/css/article.css" rel="stylesheet">
 
 </head>
 
@@ -72,7 +82,10 @@
     </div>
 </nav>
     <hgroup>
-<h1 class="text-center mt-4">Artículos sobre Python</h1>
+<header>
+  <h1 class="text-center mt-4 mb-2">Condicionales en Python</h2>
+    
+</header>
     </hgroup>
 
   </header>
@@ -82,36 +95,50 @@
 
 
         <main>
-<div class="container">
-    <p>En mi blog encontrarás guias escritas de los videos que subo a mis redes sociales y articulos sobre temas de mi
-        interes</p>
-    <article class="card bg-dark my-5" data-bs-theme="dark">
-        <div class="card-body">
-            <header>
-                <h3 class="card-title"><a href="/operaciones-matematicos-con-python.html" rel="bookmark"
-                        title="Permalink to Operaciones matemáticos con Python">Operaciones matemáticos con Python</a></h2>
-            </header>
-            <section class="card-text"><p>La función principal de un programa es la resolución de problemas. En este artículo aprenderemos a como resolver problemas matematicos usando los operadores aritmeticos.</p></section>
-            <a href="/operaciones-matematicos-con-python.html" class="btn btn-danger">Seguir leyendo</a>
-        </div>
-        <div class="card-footer text-body-secondary">
-            Publicado por: Roberto Aguilera el 09 April 2026
-        </div>
-    </article>
-    <article class="card bg-dark my-5" data-bs-theme="dark">
-        <div class="card-body">
-            <header>
-                <h3 class="card-title"><a href="/hola-mundo-con-python.html" rel="bookmark"
-                        title="Permalink to Hola mundo con Python">Hola mundo con Python</a></h2>
-            </header>
-            <section class="card-text"><p>Cuando empiezas a programar, hay un programa clásico que todos escriben: “Hola, Mundo!”. En este tutorial aprenderás a crear tu primer programa en Python y entender cómo funciona la entrada y salida de datos.</p></section>
-            <a href="/hola-mundo-con-python.html" class="btn btn-danger">Seguir leyendo</a>
-        </div>
-        <div class="card-footer text-body-secondary">
-            Publicado por: Roberto Aguilera el 01 April 2026
-        </div>
-    </article>
-</div>
+<article class="container my-5">
+  <p>Nuestros programas anteriores solo tomaban en cuenta un único escenario, los problemas de la vida real nos presentan muchos escenarios y dependiendo de este, tenemos que actuar de una forma u otra. Para que nuestros programas puedan adaptar su comportamiento y tomar decisiones dependiendo de las condiciones del escenario se usan las <em>condicionales</em>.</p>
+<p>Para entender las condicionales realicemos un programa que determine si una
+persona puede votar o no, dependiendo de su edad. En la vida real existen más
+condiciones para saber si una persona puede votar o no, pero para nuestro
+programa solo tomaremos en cuenta si la persona tiene 18 años o más, puede
+votar, de lo contrario no puede votar.</p>
+<p>Nuestro programa pedirá al usuario ingresar su edad. Si mayor de 18 años el programa debe imprimir <strong>"Puedes votar"</strong> de lo contrario debe de imprimir <strong>"No puedes votar"</strong>.</p>
+<p>En un archivo llamado <code class="highlight">votar.py</code> Ingresa el siguiente código</p>
+<div class="highlight"><pre><span></span><code><span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuantos años tienes? &quot;</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">edad</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Puedes votar&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No puedes votar&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Nuestro programa comienza pidiendo al usuario que ingrese su edad usando la función <code class="highlight"><span class="nb">input</span></code>, convirtiendolo a entero usando la función <code class="highlight"><span class="nb">int</span></code> y guardando el valor en una variable llamada
+<code class="highlight"><span class="n">edad</span></code></p>
+  <!-- <footer>
+    <p>Published: <time datetime="2026-05-04T00:00:00-06:00">
+        Mon 04 May 2026
+      </time></p>
+    <address>
+      By       <a href="/author/roberto-aguilera.html">Roberto Aguilera</a>
+    </address>
+    <p>
+      Category: <a href="/category/python.html">Python</a>
+    </p>
+    <p>
+      Tags:
+      <a href="/tag/python.html">Python</a>
+      <a href="/tag/tutorial.html">Tutorial</a>
+      <a href="/tag/programacion.html">Programación</a>
+    </p>
+  </footer> -->
+</article>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+<script src="/theme/js/article.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+
 
         </main>
 
@@ -179,6 +206,10 @@
 </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+
+<script src="/theme/js/article.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
 
 </body>
 
