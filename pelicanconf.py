@@ -26,7 +26,7 @@ MARKDOWN = {
 
 AUTHOR = "Roberto Aguilera"
 SITENAME = "Roberto Aguilera Dev"
-SITESUBTITLE = "Desarrollador de software en León GTO. Páginas web y aplicaciones móviles"
+SITESUBTITLE = "Blog de Roberto Aguilera. Desarrollador de software en León GTO. Páginas web y aplicaciones móviles"
 SITEURL = ''
 THEME = "./themes/robert_theme"
 
