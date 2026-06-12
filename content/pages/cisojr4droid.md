@@ -8,8 +8,9 @@ Tags: Android, Java, Sistemas de Archivos, Optimización, Desarrollo Móvil
 Este proyecto destaca mi capacidad para diseñar utilidades de sistema con impacto directo en el usuario final, habiendo alcanzado **más de 2,000 descargas en producción**. CISOjr4DROID es una herramienta nativa para Android que resuelve problemas de almacenamiento móvil al adaptar e implementar eficientemente algoritmos de compresión de imágenes de disco (conversión de formato ISO a CSO).
 
 ### Impacto y Tracción en Producción
-A través de la plataforma itch.io, la aplicación ha validado su utilidad en el mercado con una comunidad activa de usuarios:
+A través de la plataforma itch.io, la aplicación ha validado su utilidad en el mercado con una comunidad activa de usuarios que ha superado los 8 mil:
 
+![Estadísticas de CISOjr4DROID]({static}/images/CISOjr4DROID-stats.png)
 
 ## Valor Técnico e Ingeniería del Proyecto
 
@@ -31,4 +32,5 @@ El desarrollo técnico se centró en la gestión eficiente de recursos de hardwa
 * Enfoque riguroso en el rendimiento de la aplicación y optimización del almacenamiento en dispositivos.
 
 <a href="https://github.com/RobertAguilera712/cisojr4droid" class="btn btn-danger d-block mb-3" target="_blank" rel="noopener"><i class="bi bi-github"></i> Explorar Código en GitHub</a>
+<a href="https://robertaguilera712.itch.io/cisojr4droid" class="btn btn-danger d-block mb-3" target="_blank" rel="noopener"><i class="bi bi-download"></i> Descargar en Itch.io</a>
 <a href="./contact.html" class="btn btn-danger d-block mb-3" rel="noopener"><i class="bi bi-envelope-fill"></i> ¿Tienes un proyecto en mente? Contrátame</a>
