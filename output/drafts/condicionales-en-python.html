@@ -8,11 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="Roberto Aguilera Dev, Roberto Aguilera Desarrollador, Desarrollador de software León GTO, Desarrollador León GTO">
 
-  <meta property="og:site_name" content="Roberto Aguilera Dev">
-  <meta name="description" content="Blog de Roberto Aguilera. Desarrollador de software en León GTO. Páginas web y aplicaciones móviles">
-  <meta property="og:description" content="Blog de Roberto Aguilera. Desarrollador de software en León GTO. Páginas web y aplicaciones móviles">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="/theme/images/avatar.png">
+
 
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -35,9 +31,7 @@
 
 
 
-<meta property="og:type" content="article">
-<meta property="og:title" content="Condicionales en Python">
-<meta property="og:url" content="/drafts/condicionales-en-python.html">
+
 
 <meta name="tags" content="Python" />
 <meta name="tags" content="Tutorial" />
@@ -45,6 +39,11 @@
 
 <link href="/theme/css/article.css" rel="stylesheet">
 
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Condicionales en Python">
+<meta property="og:url" content="/drafts/condicionales-en-python.html">
+<meta name="description" content="Un programa tiene que adaptarse a distintas situaciones, adaptando su comportamiento según el escenario. Para esto se usan las condicionales. En este tutorial aprenderemos como usar las condicionales en Python.">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -108,25 +107,42 @@
 
         <main>
 <article class="container my-5">
-  <p>Nuestros programas anteriores solo tomaban en cuenta un único escenario, los problemas de la vida real nos presentan muchos escenarios y dependiendo de este, tenemos que actuar de una forma u otra. Para que nuestros programas puedan adaptar su comportamiento y tomar decisiones dependiendo de las condiciones del escenario se usan las <em>condicionales</em>.</p>
+  <p>Los programas anteriores solo tomaban en cuenta un único escenario. Los
+problemas de la vida real presentan muchos escenarios y dependiendo de este,
+el programa tiene que actuar de una forma u otra. Para que los programas puedan
+adaptar su comportamiento y tomar decisiones dependiendo de las condiciones del
+escenario se usan las <em>condicionales</em>.</p>
 <p>Para entender las condicionales realicemos un programa que determine si una
 persona puede votar o no, dependiendo de su edad. En la vida real existen más
-condiciones para saber si una persona puede votar o no, pero para nuestro
-programa solo tomaremos en cuenta si la persona tiene 18 años o más, puede
+condiciones para saber si una persona puede votar o no, pero para el
+programa solo tomaremos en cuenta si la persona tiene 18 años o más. Si es así puede
 votar, de lo contrario no puede votar.</p>
-<p>Nuestro programa pedirá al usuario ingresar su edad. Si mayor de 18 años el programa debe imprimir <strong>"Puedes votar"</strong> de lo contrario debe de imprimir <strong>"No puedes votar"</strong>.</p>
-<p>En un archivo llamado <code class="highlight">votar.py</code> Ingresa el siguiente código</p>
+<p>El programa pedirá al usuario ingresar su edad. Si es mayor de 18 años el
+programa debe imprimir <strong>"Puedes votar"</strong> de lo contrario debe imprimir 
+<strong>"No puedes votar"</strong>.</p>
+<p>En un archivo llamado <code class="highlight">votar.py</code> Ingresa el siguiente código.</p>
 <div class="highlight"><pre><span></span><code><span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuantos años tienes? &quot;</span><span class="p">))</span>
 <span class="k">if</span> <span class="n">edad</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Puedes votar&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No puedes votar&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>Nuestro programa comienza pidiendo al usuario que ingrese su edad usando la función <code class="highlight"><span class="nb">input</span></code>, convirtiendolo a entero usando la función <code class="highlight"><span class="nb">int</span></code> y guardando el valor en una variable llamada
-<code class="highlight"><span class="n">edad</span></code></p>
+<p>El programa comienza pidiendo al usuario que ingrese su edad usando la función
+<code class="highlight"><span class="nb">input</span></code>, convirtiéndolo a entero usando la función <code class="highlight"><span class="nb">int</span></code> y
+guardando el valor en una variable llamada <code class="highlight"><span class="n">edad</span></code>. Enseguida, se usa
+la sentencia <code class="highlight"><span class="k">if</span></code>, la cual evalúa la condición que la sigue
+<code class="highlight"><span class="n">edad</span> <span class="o">&gt;=</span> <span class="mi">18</span></code>, esta sentencia dará un valor de <code class="highlight"><span class="kc">True</span></code> o
+<code class="highlight"><span class="kc">False</span></code>, verdadero o falso. </p>
+<p>El bloque de código que sigue la sentencia <code class="highlight"><span class="k">if</span></code> 
+se ejecutará en caso de que la condición sea verdadera. 
+Ahí es donde se imprime el mensaje <strong>"Puedes votar"</strong>, este
+bloque de código debe de ir identado por un <span class="keys"><kbd class="key-tab">Tab</kbd></span>. Después, está la 
+sentencia <code class="highlight"><span class="k">else</span></code> la cual indica que el bloque indentado que la
+siga se ejecutará en caso de que la condición evaluada sea falsa. 
+Ahí es dónde se imprime el mensaje <strong>"No puedes votar"</strong>.</p>
   <!-- <footer>
     <p>Published: <time datetime="2026-05-04T00:00:00-06:00">
-        Mon 04 May 2026
+        lun. 04 mayo 2026
       </time></p>
     <address>
       By       <a href="/author/roberto-aguilera.html">Roberto Aguilera</a>

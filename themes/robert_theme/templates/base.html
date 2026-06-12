@@ -9,11 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="Roberto Aguilera Dev, Roberto Aguilera Desarrollador, Desarrollador de software León GTO, Desarrollador León GTO">
 
-  <meta property="og:site_name" content="{{ SITENAME }}">
-  <meta name="description" content="{{ SITESUBTITLE }}">
-  <meta property="og:description" content="{{ SITESUBTITLE }}">
-  <meta property="og:url" content="{{ SITEURL }}">
-  <meta property="og:image" content="{{ SITEURL }}/theme/images/avatar.png">
+
 
 
   {# Bootstrap cnd #}
@@ -35,6 +31,14 @@
   <link rel="manifest" href="{{ SITEURL }}/theme/favicon_io/site.webmanifest">
 
   {% endblock head %}
+
+  {% block ogtags %}
+  <meta property="og:site_name" content="{{ SITENAME }}">
+  <meta name="description" content="{{ SITESUBTITLE }}">
+  <meta property="og:description" content="{{ SITESUBTITLE }}">
+  <meta property="og:url" content="{{ SITEURL }}">
+  <meta property="og:image" content="{{ SITEURL }}/theme/images/avatar.png">
+  {% endblock ogtags %}
 </head>
 
 <body class="d-flex flex-column min-vh-100">

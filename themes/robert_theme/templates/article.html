@@ -12,14 +12,7 @@
 {% endif %}
 
 
-<meta property="og:type" content="article">
-<meta property="og:title" content="{{ article.title|striptags }}">
-<meta property="og:url" content="{{ SITEURL }}/{{ article.url }}">
-{% if article.description %}
-<meta name="description" content="{{article.description}}" />
-<meta name="description" content="{{ article.summary|striptags|e }}">
 
-{% endif %}
 
 {% for tag in article.tags %}
 <meta name="tags" content="{{tag}}" />
@@ -28,6 +21,13 @@
 <link href="{{ SITEURL }}/theme/css/article.css" rel="stylesheet">
 
 {% endblock %}
+
+{% block ogtags %}
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ article.title|striptags }}">
+<meta property="og:url" content="{{ SITEURL }}/{{ article.url }}">
+<meta name="description" content="{{ article.summary|striptags|e }}">
+{% endblock ogtags %}
 
 {% block content_title %}
 <header>

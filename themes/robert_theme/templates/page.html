@@ -1,9 +1,17 @@
 {% extends "base.html" %}
 
+{% block title %}{{ SITENAME|striptags }} - {{ page.title|striptags }}{% endblock %}
+
 {% block head %}
 {{ super()}}
 <link href="{{ SITEURL }}/theme/css/page.css" rel="stylesheet">
 {% endblock head %}
+
+{% block ogtags %}
+<meta property="og:title" content="{{ page.title|striptags }}">
+<meta property="og:url" content="{{ SITEURL }}/{{ page.url }}">
+<meta name="description" content="{{ page.summary|striptags|e }}">
+{% endblock ogtags %}
 
 {% block body %}
 
