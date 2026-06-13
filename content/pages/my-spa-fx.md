@@ -1,5 +1,6 @@
 Title: Cliente de Escritorio para la Gestión de un SPA
 Summary: Desarrollo de una aplicación de escritorio corporativa que consume servicios web RESTful, optimizada para la operación diaria y administración de un centro de bienestar.
+Tags: Java, Aplicaciones de escritorio, ERP
 
 ![Interfaz del Cliente de Escritorio My SPA]({static}/images/My SPA FX.png)
 

@@ -1,7 +1,7 @@
 Title: Swipora Landing Page
 Summary: Landing page modular desarrollada en Flask y exportada como sitio estático mediante Frozen-Flask, optimizada para la conversión y captación de leads en fase de prelanzamiento.
 Category: Proyectos
-Tags: Python, Flask, Frozen-Flask, Web Development, SEO, Growth Engineering
+Tags: Python, Flask, Frozen-Flask, Web Development, SEO, Growth Engineering, Landing Page, Páginas web
 
 ![Diseño de la Landing Page de Swipora]({static}/images/Swipora Landing Page.png)
 

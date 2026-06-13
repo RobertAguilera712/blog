@@ -1,5 +1,6 @@
 Title: Sistema de Monitoreo Térmico en Tiempo Real
 Summary: Desarrollo de una aplicación de escritorio de alta precisión que centraliza, procesa y visualiza datos térmicos provenientes de hardware embebido en tiempo real.
+Tags: Java, Aplicaciones de escritorio, IoT
 
 ![Interfaz del Monitor de Temperatura]({static}/images/Monitor de temperatura.png)
 

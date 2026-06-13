@@ -1,5 +1,6 @@
 Title: Sistema ERP para Gestión de un SPA 
 Summary: Desarrollo de una plataforma web integral para la automatización de operaciones, control de clientes y administración de servicios utilizando servicios web REST.
+Tags: Java, Aplicaciones web, API REST, ERP
 
 ![Interfaz del Sistema My SPA]({static}/images/My SPA.png)
 

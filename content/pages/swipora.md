@@ -1,7 +1,7 @@
 Title: Swipora
 Summary: Plataforma móvil e inteligente para el aprendizaje de inglés basada en algoritmos de repetición espaciada y optimización de memoria a largo plazo.
 Category: Proyectos
-Tags: Flutter, Dart, Algoritmos, EdTech, IA, En Desarrollo
+Tags: Flutter, Dart, Algoritmos, EdTech, En Desarrollo
 
 ![Interfaz de Swipora]({static}/images/Swipora.png)
 
