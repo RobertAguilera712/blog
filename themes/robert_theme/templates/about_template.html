@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block title %}{{ SITENAME|striptags }} - Acerca de mí{% endblock %}
+
+{% block ogtags %}
+<meta property="og:title" content="{{ SITENAME|striptags }} - Acerca de mí">
+<meta property="og:url" content="{{ SITEURL }}/{{ page.url }}">
+<meta name="description" content="Acerca de Roberto Aguilera. Desarrollador de software en León GTO. Páginas web y aplicaciones móviles">
+{% endblock ogtags %}
+
 {% block body %}
 
     {% include 'navbar.html' %}
