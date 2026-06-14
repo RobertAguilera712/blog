@@ -15,18 +15,26 @@
 
 
 {% for tag in article.tags %}
-<meta name="tags" content="{{tag}}" />
+<meta name="tags"
+      content="{{tag}}" />
 {% endfor %}
 
-<link href="{{ SITEURL }}/theme/css/article.css" rel="stylesheet">
+<link href="{{ SITEURL }}/theme/css/article.css"
+      rel="stylesheet">
 
 {% endblock %}
 
 {% block ogtags %}
-<meta property="og:type" content="article">
-<meta property="og:title" content="{{ article.title|striptags }}">
-<meta property="og:url" content="{{ SITEURL }}/{{ article.url }}">
-<meta name="description" content="{{ article.summary|striptags|e }}">
+<meta property="og:type"
+      content="article">
+<meta property="og:title"
+      content="{{ article.title|striptags }}">
+<meta property="og:url"
+      content="{{ SITEURL }}/{{ article.url }}">
+<meta name="description"
+      content="{{ article.summary|striptags|e }}">
+<meta property="og:image"
+      content="{{ SITEURL }}/theme/images/avatar.png">
 {% endblock ogtags %}
 
 {% block content_title %}
@@ -75,7 +83,9 @@
 {% block scripts %}
 {{ super() }}
 <script src="{{ SITEURL }}/theme/js/article.js"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+<script id="MathJax-script"
+        async
+        src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 
 {% endblock scripts %}
 
