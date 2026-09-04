@@ -76,6 +76,10 @@ LIQUID_TAGS = ["img", "literal", "video", "youtube", "vimeo", "include_code"]
 STATIC_PATHS = ["images", "code"]
 CODE_DIR = "code"
 
+ARTICLE_URL = "blog/{slug}.html"
+ARTICLE_SAVE_AS = "blog/{slug}.html"
+
+INDEX_SAVE_AS = "blog/index.html"
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True

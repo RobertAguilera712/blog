@@ -124,3 +124,20 @@ nav .nav-link:hover[href] {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+blockquote {
+    font-family: "Georgia", "Times New Roman", serif; /* Elegant serif font */
+    font-style: italic;                              /* Gives a classic, literary feel */
+    max-width: 400px;                                /* Centers the poem block nicely */
+    margin: 2em auto;                                /* Centers the block on the page */
+    text-align: left;                                /* Keeps left alignment for structure */
+}
+
+blockquote p {
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+blockquote + p {
+    display: none;
+}

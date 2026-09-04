@@ -27,9 +27,9 @@
                        href="{{ SITEURL }}/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if page and page.slug == 'about' %}active{% endif %}"
+                    <a class="nav-link {% if  output_file.startswith('blog/') %}active{% endif %}"
                        aria-current="{% if page and page.slug == 'about' %}page{% endif %}"
-                       href="{{ SITEURL }}/pages/about.html">Sobre mí</a>
+                       href="{{ SITEURL }}/blog">Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {% if page and page.slug == 'projects' %}active{% endif %}"
@@ -42,25 +42,6 @@
                        href="{{ SITEURL }}/pages/contact.html">Contacto</a>
                 </li>
             </ul>
-
-            <!-- <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link"
-                       href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"
-                       href="{{ SITEURL }}/pages/about.html">Sobre mí</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"
-                       href="{{ SITEURL }}/pages/projects.html">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"
-                       href="{{ SITEURL }}/pages/contact.html">Contacto</a>
-                </li>
-            </ul> -->
         </div>
     </div>
 </nav>
