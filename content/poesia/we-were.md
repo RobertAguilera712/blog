@@ -1,4 +1,4 @@
-Title: What We Were
+Title: We Were
 Date: 2026-09-03
 Category: Poesía
 Tags: Off Topic, Poesía, Personal
